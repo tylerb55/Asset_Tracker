@@ -21,5 +21,10 @@ class Crypto(BaseModel):
     sentiment_score_monthly: Optional[float] = None
     sentiment_score_annually: Optional[float] = None
 
+class Sentiment(BaseModel):
+    sentence: str
+    label: str
+    score: float
+
 
 monero = Crypto(name='Monero', code='XMR')
